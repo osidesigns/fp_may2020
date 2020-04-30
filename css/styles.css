@@ -1,0 +1,596 @@
+/* Default Settings */
+* {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+hr.fullWidth {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+h1,
+h1 span {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 4.5rem;
+}
+h3 {
+  font-size: 4rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+p,
+a {
+  font-size: 1.6rem;
+}
+
+p {
+  margin: 1.5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* utility classes */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+/* Header Content */
+header {
+  background: url("http://source.unsplash.com/random/1600") no-repeat 0 0 /
+    cover;
+  height: 300px;
+}
+
+#header-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  visibility: hidden;
+}
+
+#header-content {
+  display: flex;
+  align-items: center;
+}
+
+#nav-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+#nav-menu li > a {
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+#nav-menu li:hover > a {
+  color: lightgreen;
+}
+
+#contact-info {
+  margin-left: auto;
+  color: #fff;
+}
+
+/* Hero Area */
+#hero-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  min-height: 300px;
+}
+
+#hero-area h1 {
+  color: #fff;
+  text-shadow: 0.2rem 0.2rem 0.2rem #2d2d2d;
+}
+
+#hero-area h1 span {
+  color: lightgreen;
+}
+
+#hero-area h1,
+#hero-area h1 span {
+  font-size: 7rem;
+}
+
+#hero-area-wrapper p#slogan {
+  font-size: 3rem;
+  color: gold;
+  text-shadow: 0.2rem 0.2rem 0.2rem #2d2d2d;
+  margin-bottom: 2rem;
+  visibility: hidden;
+}
+
+#hero-area-wrapper #cta-btn button {
+  font-size: 1.8rem;
+  margin: 0 1rem;
+  padding: 1.5rem;
+  border: 0;
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: olivedrab;
+  color: #fff;
+  visibility: hidden;
+}
+
+/* Into Section */
+#intro-section {
+  margin-top: -45px;
+}
+
+#intro-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#devphoto img {
+  border: 5px solid olivedrab;
+  padding: 0.3rem;
+}
+
+#devintro {
+  padding: 0 2.5rem;
+}
+
+#devintro h3 {
+  color: #fff;
+  text-shadow: 0.2rem 0.2rem 0.2rem #2d2d2d;
+}
+
+/* Featured Works */
+#works-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#featuredworks .works {
+  border: 1px solid #2d2d2d;
+  text-align: center;
+  padding: 1rem;
+  margin: 3rem 1.5rem;
+}
+
+#featuredworks img {
+  border: 3px solid #2d2d2d;
+  padding: 0.3rem;
+}
+
+/* Current Project */
+#current-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("http://source.unsplash.com/random/1599") no-repeat 0 0 /
+    cover;
+  height: 500px;
+}
+
+#current-project h1 {
+  color: #fff;
+  text-shadow: 2rem 2rem 2rem #2d2d2d;
+}
+
+/* Contact Area */
+#contact-area-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#contact-area-wrapper h2 {
+  color: #fff;
+  text-align: center;
+  text-shadow: 2rem 2rem 2rem #2d2d2d;
+  margin-bottom: 1.5rem;
+}
+
+#contactme {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-area-wrapper #leftcol {
+  color: #fff;
+}
+
+#leftcol {
+  flex: 4;
+}
+
+#leftcol p,
+#leftcol p > strong {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+#leftcol #social-links a > i.fa {
+  color: #fff;
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+#leftcol #social-links a:hover > i.fa {
+  color: lightgreen;
+  font-size: 3rem;
+}
+
+#rightcol {
+  flex: 3;
+}
+
+#rightcol form {
+  display: flex;
+  flex-direction: column;
+}
+
+#rightcol input[type="text"],
+#rightcol input[type="email"] {
+  height: 3rem;
+  padding: 1rem 0.5rem;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+#rightcol textarea {
+  min-height: 15rem;
+}
+
+#rightcol input[type="submit"] {
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  font-size: 1.6rem;
+  background: transparent;
+  border: 1px solid lightgreen;
+  border-radius: 0.1rem;
+  color: lightgreen;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+#rightcol input[type="submit"]:hover {
+  background-color: rgba(144, 238, 144, 0.7);
+  color: #fff;
+}
+
+/* Footer Area */
+
+#footer-wrapper {
+  background: url("http://source.unsplash.com/random/1598") no-repeat 0 0 /
+    cover;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #fff;
+  padding: 1.5rem 0;
+  margin-top: auto;
+}
+
+footer h2,
+footer h2 span {
+  font-size: 3rem;
+}
+
+footer h2 {
+  color: #fff;
+  text-shadow: 0.2rem 0.2rem 0.2rem #2d2d2d;
+}
+
+footer h2 span {
+  color: lightgreen;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+/* ------------- MEDIA QUERY STARTS HERE --------- */
+
+@media (min-width: 767px) {
+  hr.fullWidth {
+    width: 80%;
+    margin: 3rem auto;
+  }
+
+  h1,
+  h1 span {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4.5rem;
+  }
+  h3 {
+    font-size: 4rem;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  p,
+  a {
+    font-size: 1.6rem;
+  }
+
+  p {
+    margin: 1.5rem 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* utility classes */
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  /* Header Content */
+  header {
+    background: url("http://source.unsplash.com/random/1600") no-repeat 0 0 /
+      cover;
+    height: 500px;
+  }
+
+  #header-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    visibility: visible;
+  }
+
+  #header-content {
+    display: flex;
+    align-items: center;
+  }
+
+  #nav-menu ul {
+    display: flex;
+    list-style: none;
+  }
+
+  #nav-menu li > a {
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+  }
+
+  #nav-menu li:hover > a {
+    color: lightgreen;
+  }
+
+  #contact-info {
+    margin-left: auto;
+    color: #fff;
+  }
+
+  /* Hero Area */
+  #hero-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    min-height: 500px;
+  }
+
+  #hero-area h1 {
+    color: #fff;
+    text-shadow: 0.2rem 0.2rem 0.2rem #2d2d2d;
+  }
+
+  #hero-area h1 span {
+    color: lightgreen;
+  }
+
+  #hero-area h1,
+  #hero-area h1 span {
+    font-size: 7rem;
+  }
+
+  #hero-area-wrapper p#slogan {
+    font-size: 3rem;
+    color: gold;
+    text-shadow: 0.2rem 0.2rem 0.2rem #2d2d2d;
+    margin-bottom: 2rem;
+    visibility: visible;
+  }
+
+  #hero-area-wrapper #cta-btn button {
+    font-size: 1.8rem;
+    margin: 0 1rem;
+    padding: 1.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+    outline: none;
+    background-color: olivedrab;
+    color: #fff;
+    visibility: visible;
+  }
+
+  /* Into Section */
+  #intro-section {
+    margin-top: -45px;
+  }
+
+  #intro-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  #devphoto img {
+    border: 5px solid olivedrab;
+    padding: 0.3rem;
+  }
+
+  #devintro {
+    padding: 0 2.5rem;
+  }
+
+  #devintro h3 {
+    color: #fff;
+    text-shadow: 0.2rem 0.2rem 0.2rem #2d2d2d;
+  }
+
+  /* Featured Works */
+  #works-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #featuredworks .works {
+    border: 1px solid #2d2d2d;
+    text-align: center;
+    padding: 1rem;
+    margin: 3rem 1.5rem;
+  }
+
+  #featuredworks img {
+    border: 3px solid #2d2d2d;
+    padding: 0.3rem;
+  }
+
+  /* Current Project */
+  #current-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("http://source.unsplash.com/random/1599") no-repeat 0 0 /
+      cover;
+    height: 500px;
+  }
+
+  #current-project h1 {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #2d2d2d;
+  }
+
+  /* Contact Area */
+  #contact-area-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  #contact-area-wrapper h2 {
+    color: #fff;
+    text-align: center;
+    text-shadow: 2rem 2rem 2rem #2d2d2d;
+    margin-bottom: 1.5rem;
+  }
+
+  #contact-area-wrapper #leftcol {
+    color: #fff;
+  }
+
+  #contactme {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #leftcol {
+    flex: 4;
+  }
+
+  #leftcol p,
+  #leftcol p > strong {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  #rightcol {
+    flex: 3;
+  }
+
+  #rightcol form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #rightcol input[type="text"],
+  #rightcol input[type="email"] {
+    height: 3rem;
+    padding: 1rem 0.5rem;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+  }
+
+  #rightcol textarea {
+    min-height: 15rem;
+  }
+
+  #rightcol input[type="submit"] {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    font-size: 1.6rem;
+    background: transparent;
+    border: 1px solid lightgreen;
+    border-radius: 0.1rem;
+    color: lightgreen;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #rightcol input[type="submit"]:hover {
+    background-color: rgba(144, 238, 144, 0.7);
+    color: #fff;
+  }
+
+  /* Footer Area */
+
+  #footer-wrapper {
+    background: url("http://source.unsplash.com/random/1598") no-repeat 0 0 /
+      cover;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+    padding: 1.5rem 0;
+    margin-top: auto;
+  }
+
+  footer h2,
+  footer h2 span {
+    font-size: 3rem;
+  }
+
+  footer h2 {
+    color: #fff;
+    text-shadow: 0.2rem 0.2rem 0.2rem #2d2d2d;
+  }
+
+  footer h2 span {
+    color: lightgreen;
+  }
+
+  footer p {
+    margin: 0.5rem 0;
+    padding-bottom: 1rem;
+  }
+}
